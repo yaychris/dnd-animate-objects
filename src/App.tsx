@@ -47,8 +47,8 @@ export function App() {
     <Container size="2" p="8">
       <Heading mb="8">Animate Objects Attack Roller</Heading>
 
-      <Flex flexGrow="1" direction="row" gap="8">
-        <Flex direction="column" gap="4" mb="8">
+      <Flex direction="row" gap="8">
+        <Flex flexGrow="1" direction="column" gap="4" mb="8">
           <label>
             Number of Objects:{' '}
             <TextField.Root type="number" value={numObjects} onChange={numberSetter(setNumObjects)} />
@@ -91,7 +91,7 @@ export function App() {
           </Flex>
         </Flex>
 
-        <Box>
+        <Box flexGrow="1">
           {attackResult && (
             <DataList.Root size="3">
               <DataList.Item>
